@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="dd99123dc30312108d241275e40131bd" label="Incident" max_length="40" name="u_incident" type="collection">
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="40" name="u_description" type="string"/>
+        <element attributes="encode_utf8=false" label="Caller" max_length="32" name="u_caller" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Short Description" max_length="40" name="u_short_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="u_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Priority" max_length="40" name="u_priority" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="C1" value="c1"/>
+                <element inactive_on_update="false" label="P4" value="p4"/>
+                <element inactive_on_update="false" label="P1" value="p1"/>
+                <element inactive_on_update="false" label="P3" value="p3"/>
+                <element inactive_on_update="false" label="P2" value="p2"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Assignment Group" max_length="32" name="u_assignment_group" reference="sys_user_group" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Impact" max_length="40" name="u_impact" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Low" sequence="3" value="low"/>
+                <element inactive_on_update="false" label="Significant/Large" sequence="1" value="significant/large"/>
+                <element inactive_on_update="false" label="Moderate" sequence="2" value="moderate"/>
+                <element inactive_on_update="false" label="Extensive/Widespread" sequence="0" value="extensive/widespread"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Urgency" max_length="40" name="u_urgency" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Medium" sequence="2" value="medium"/>
+                <element inactive_on_update="false" label="Immediate" sequence="0" value="immediate"/>
+                <element inactive_on_update="false" label="High" sequence="1" value="high"/>
+                <element inactive_on_update="false" label="Low" sequence="3" value="low"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="State" max_length="40" name="u_state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="On Hold" sequence="2" value="on_hold"/>
+                <element inactive_on_update="false" label="Resolved" sequence="3" value="resolved"/>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
+                <element inactive_on_update="false" label="In Progress" sequence="1" value="in_progress"/>
+                <element inactive_on_update="false" label="Closed" sequence="4" value="closed"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+        <index name="index2">
+            <element name="u_assignment_group"/>
+        </index>
+        <index name="index3">
+            <element name="u_caller"/>
+        </index>
+    </element>
+</database>
