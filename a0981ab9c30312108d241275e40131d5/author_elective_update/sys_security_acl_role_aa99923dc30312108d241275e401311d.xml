@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-13 01:27:40</sys_created_on>
+        <sys_id>aa99923dc30312108d241275e401311d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_incident.nam-technical-service</sys_name>
+        <sys_package display_value="Nam Mangement" source="a0981ab9c30312108d241275e40131d5">a0981ab9c30312108d241275e40131d5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Nam Mangement">a0981ab9c30312108d241275e40131d5</sys_scope>
+        <sys_security_acl display_value="u_incident">e699923dc30312108d241275e401311a</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_aa99923dc30312108d241275e401311d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-13 01:27:40</sys_updated_on>
+        <sys_user_role display_value="nam-technical-service" name="nam-technical-service">3de5dab5c30312108d241275e4013130</sys_user_role>
+    </sys_security_acl_role>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Nam Mangement">a0981ab9c30312108d241275e40131d5</application>
+        <file_path/>
+        <instance_id>8082d2d2ebb7c694e9bbfddacad0cdde</instance_id>
+        <instance_name>dev286046</instance_name>
+        <name>sys_security_acl_role_aa99923dc30312108d241275e401311d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-13 01:27:40</sys_created_on>
+        <sys_id>aa99923dc30312108d241275e401311d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_incident.nam-technical-service</sys_name>
+        <sys_package display_value="Nam Mangement" source="a0981ab9c30312108d241275e40131d5">a0981ab9c30312108d241275e40131d5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Nam Mangement">a0981ab9c30312108d241275e40131d5</sys_scope>
+        <sys_security_acl display_value="u_incident">e699923dc30312108d241275e401311a</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_aa99923dc30312108d241275e401311d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-13 01:27:40</sys_updated_on>
+        <sys_user_role display_value="nam-technical-service" name="nam-technical-service">3de5dab5c30312108d241275e4013130</sys_user_role>
+    </sys_security_acl_role>
+</record_update>]]></payload>
+        <payload_hash>-291985792</payload_hash>
+        <record_name>u_incident.nam-technical-service</record_name>
+        <reverted_from/>
+        <source>113d3675c34712108d241275e40131b7</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-13 04:03:19</sys_created_on>
+        <sys_id>b63db675c34712108d241275e40131d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1945dd4913e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-13 04:03:19</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>763db675f6471210b6b345be4b9c08d9</update_guid>
+        <update_guid_history>763db675f6471210b6b345be4b9c08d9:-291985792</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="u_incident.nam-technical-service">7c4fdb31c30b12108d241275e4013155</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-13 06:32:00</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>40be5a8551874e0b860abac55c6a8549</sys_id>
+        <sys_metadata>aa99923dc30312108d241275e401311d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_incident.nam-technical-service</sys_name>
+        <sys_package display_value="Nam Mangement" source="a0981ab9c30312108d241275e40131d5">a0981ab9c30312108d241275e40131d5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Nam Mangement">a0981ab9c30312108d241275e40131d5</sys_scope>
+        <sys_scope_delete display_value="">100dbc64c45c416e895235a3c5ac0044</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_aa99923dc30312108d241275e401311d</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_aa99923dc30312108d241275e401311d">b63db675c34712108d241275e40131d9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-13 06:32:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
