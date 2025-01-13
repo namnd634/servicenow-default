@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role">
+    <sys_ui_action_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_ui_action_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-13 07:03:33</sys_created_on>
+        <sys_id>3f66ef39c30b12108d241275e4013139</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Resolve.nam-customer-service</sys_name>
+        <sys_package display_value="Nam Mangement" source="a0981ab9c30312108d241275e40131d5">a0981ab9c30312108d241275e40131d5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Nam Mangement">a0981ab9c30312108d241275e40131d5</sys_scope>
+        <sys_ui_action display_value="Resolve">2df5e7b9c30b12108d241275e401314a</sys_ui_action>
+        <sys_update_name>sys_ui_action_role_3f66ef39c30b12108d241275e4013139</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-13 07:17:20</sys_updated_on>
+        <sys_user_role display_value="nam-customer-service" name="nam-customer-service">17e5cf71c38712108d241275e401312e</sys_user_role>
+    </sys_ui_action_role>
+</record_update>
