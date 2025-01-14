@@ -13,55 +13,53 @@
         <reverse_if_false>true</reverse_if_false>
         <run_scripts>true</run_scripts>
         <script_false><![CDATA[function onCondition() {
-	g_form.setDisplay('u_assignment_group', 'true');
-	g_form.setDisplay('u_state', 'true');
-	g_form.setDisplay('u_impact', 'true');
-	g_form.setDisplay('u_urgency', 'true');
-	g_form.setDisplay('u_priority', 'true');
-	g_form.setDisplay('sys_created_on', 'true');
-	g_form.setDisplay('u_assigned_to', 'true');
+
 }]]></script_false>
         <script_true><![CDATA[function onCondition() {
-    var ourUser = g_user.hasRole('nam-end-user');
-    if (ourUser == true) {
-        g_form.setDisplay('u_assignment_group', 'false');
-		g_form.setDisplay('u_state', 'false');
-		g_form.setDisplay('u_impact', 'false');
-		g_form.setDisplay('u_urgency', 'false');
-		g_form.setDisplay('u_priority', 'false');
-		g_form.setDisplay('sys_created_on', 'false');
-		g_form.setDisplay('u_assigned_to', 'false');
-	}
-}]]></script_true>
+    var ourRoleTechnical = g_user.hasRole('nam-technical-service');
+    var ourRoleCustomer = g_user.hasRole('nam-customer-service');
+    
+    if (ourRoleTechnical || ourRoleCustomer) {
+        g_form.setReadOnly('u_caller', true);
+        g_form.setReadOnly('u_assignment_group', true);
+        g_form.setReadOnly('u_assigned_to', true);
+        g_form.setReadOnly('u_impact', true);
+        g_form.setReadOnly('u_urgency', true);
+        g_form.setReadOnly('u_priority', true);
+        g_form.setReadOnly('u_short_description', true);
+        g_form.setReadOnly('u_description', true);
+    }
+}
+]]></script_true>
         <set_values/>
-        <short_description>Hidden fields for end-user</short_description>
+        <short_description>Not changeable fields for technical and customer service</short_description>
         <sys_class_name>sys_ui_policy</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-13 06:42:44</sys_created_on>
+        <sys_created_on>2025-01-14 03:08:19</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>efd0a3f1c30b12108d241275e40131d5</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_name>Hidden fields for end-user</sys_name>
+        <sys_id>ecf8b7c6c38312108d241275e4013122</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Not changeable fields for technical and customer service</sys_name>
         <sys_overrides/>
         <sys_package display_value="Nam Mangement" source="a0981ab9c30312108d241275e40131d5">a0981ab9c30312108d241275e40131d5</sys_package>
         <sys_policy/>
         <sys_scope display_value="Nam Mangement">a0981ab9c30312108d241275e40131d5</sys_scope>
-        <sys_update_name>sys_ui_policy_efd0a3f1c30b12108d241275e40131d5</sys_update_name>
+        <sys_update_name>sys_ui_policy_ecf8b7c6c38312108d241275e4013122</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-14 03:31:27</sys_updated_on>
+        <sys_updated_on>2025-01-14 03:28:40</sys_updated_on>
         <table>u_incident</table>
-        <ui_type>10</ui_type>
+        <ui_type>0</ui_type>
         <view/>
     </sys_ui_policy>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
-        <id>efd0a3f1c30b12108d241275e40131d5</id>
+        <id>ecf8b7c6c38312108d241275e4013122</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-13 06:42:43</sys_created_on>
-        <sys_id>a9b127b1c30b12108d241275e4013131</sys_id>
+        <sys_created_on>2025-01-14 03:08:18</sys_created_on>
+        <sys_id>e23a77c6c38312108d241275e401313c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-13 06:42:43</sys_updated_on>
+        <sys_updated_on>2025-01-14 03:08:18</sys_updated_on>
         <table>sys_ui_policy</table>
         <use_es_latest>false</use_es_latest>
     </sys_es_latest_script>
