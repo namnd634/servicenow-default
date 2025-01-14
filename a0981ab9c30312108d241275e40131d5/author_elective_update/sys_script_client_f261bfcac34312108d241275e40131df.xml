@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Mandetory fields for Helpdesk</name>
+        <order/>
+        <script><![CDATA[function onLoad(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    // Kiểm tra vai trò của người dùng
+    var userRoles = g_user.roles; // Lấy danh sách các vai trò của người dùng
+    var isHelpdesk = userRoles.includes('nam-helpdesk'); // Thay 'itil' bằng role cụ thể của Helpdesk nếu khác
+
+    // Đặt Assignment Group là mandatory nếu người dùng thuộc vai trò Helpdesk
+    if (isHelpdesk) {
+        g_form.setMandatory('u_assignment_group', true);
+    }
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-14 02:36:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f261bfcac34312108d241275e40131df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Mandetory fields for Helpdesk</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Nam Mangement" source="a0981ab9c30312108d241275e40131d5">a0981ab9c30312108d241275e40131d5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Nam Mangement">a0981ab9c30312108d241275e40131d5</sys_scope>
+        <sys_update_name>sys_script_client_f261bfcac34312108d241275e40131df</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-14 02:36:26</sys_updated_on>
+        <table>u_incident</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Nam Mangement">a0981ab9c30312108d241275e40131d5</application>
+        <file_path/>
+        <instance_id>8082d2d2ebb7c694e9bbfddacad0cdde</instance_id>
+        <instance_name>dev286046</instance_name>
+        <name>sys_script_client_f261bfcac34312108d241275e40131df</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Mandetory fields for Helpdesk&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    // Kiểm tra vai trò của người dùng
+    var userRoles = g_user.roles; // Lấy danh sách các vai trò của người dùng
+    var isHelpdesk = userRoles.includes('nam-helpdesk'); // Thay 'itil' bằng role cụ thể của Helpdesk nếu khác
+
+    // Đặt Assignment Group là mandatory nếu người dùng thuộc vai trò Helpdesk
+    if (isHelpdesk) {
+        g_form.setMandatory('u_assignment_group', true);
+    }
+}
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-14 02:36:26&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;f261bfcac34312108d241275e40131df&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Mandetory fields for Helpdesk&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Nam Mangement" source="a0981ab9c30312108d241275e40131d5"&gt;a0981ab9c30312108d241275e40131d5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Nam Mangement"&gt;a0981ab9c30312108d241275e40131d5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_f261bfcac34312108d241275e40131df&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-14 02:36:26&lt;/sys_updated_on&gt;&lt;table&gt;u_incident&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-704509499</payload_hash>
+        <record_name>Mandetory fields for Helpdesk</record_name>
+        <reverted_from/>
+        <source>be2ef2b5c34712108d241275e4013182</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-14 02:36:26</sys_created_on>
+        <sys_id>7fe2334ec34312108d241275e4013163</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19462ab61010000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-14 02:36:26</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>73e2334e8b4312102ca14b3c10232863</update_guid>
+        <update_guid_history>73e2334e8b4312102ca14b3c10232863:-704509499</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-14 02:43:46</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>4e70b3ba3f2848808ab93b31c1484000</sys_id>
+        <sys_metadata>f261bfcac34312108d241275e40131df</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Mandetory fields for Helpdesk</sys_name>
+        <sys_package display_value="Nam Mangement" source="a0981ab9c30312108d241275e40131d5">a0981ab9c30312108d241275e40131d5</sys_package>
+        <sys_parent display_value="Incident">dd99123dc30312108d241275e40131bd</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Nam Mangement">a0981ab9c30312108d241275e40131d5</sys_scope>
+        <sys_scope_delete display_value="">100dbc64c45c416e895235a3c5ac0044</sys_scope_delete>
+        <sys_update_name>sys_script_client_f261bfcac34312108d241275e40131df</sys_update_name>
+        <sys_update_version display_value="sys_script_client_f261bfcac34312108d241275e40131df">7fe2334ec34312108d241275e4013163</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-14 02:43:46</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
