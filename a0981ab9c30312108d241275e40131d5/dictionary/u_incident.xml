@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="dd99123dc30312108d241275e40131bd" label="Incident" max_length="40" name="u_incident" type="collection">
+    <element audit="true" db_object_id="dd99123dc30312108d241275e40131bd" label="Incident" max_length="40" name="u_incident" type="collection">
         <element attributes="encode_utf8=false" label="Caller" mandatory="true" max_length="32" name="u_caller" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Urgency" max_length="40" name="u_urgency" type="choice">
             <choice>

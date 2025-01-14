@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_notification_workspace_content">
+    <sys_notification_workspace_content action="DELETE">
+        <active>true</active>
+        <is_default>false</is_default>
+        <name>Notify New Ticket</name>
+        <notification display_value="Notify New Ticket">cfdfd786c30312108d241275e4013101</notification>
+        <route display_value="Agent Workspace">cb1af195872023002941b53046cb0b4e</route>
+        <sys_class_name>sys_notification_workspace_content</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-14 01:23:58</sys_created_on>
+        <sys_id>18522b4ac30312108d241275e40131c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Notify New Ticket</sys_name>
+        <sys_package display_value="Nam Mangement" source="a0981ab9c30312108d241275e40131d5">a0981ab9c30312108d241275e40131d5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Nam Mangement">a0981ab9c30312108d241275e40131d5</sys_scope>
+        <sys_update_name>sys_notification_workspace_content_18522b4ac30312108d241275e40131c9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-14 01:23:58</sys_updated_on>
+    </sys_notification_workspace_content>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Nam Mangement">a0981ab9c30312108d241275e40131d5</application>
+        <file_path/>
+        <instance_id>8082d2d2ebb7c694e9bbfddacad0cdde</instance_id>
+        <instance_name>dev286046</instance_name>
+        <name>sys_notification_workspace_content_18522b4ac30312108d241275e40131c9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_notification_workspace_content"><sys_notification_workspace_content action="INSERT_OR_UPDATE"><active>true</active><is_default>false</is_default><name>Notify New Ticket</name><notification display_value="Notify New Ticket">cfdfd786c30312108d241275e4013101</notification><route display_value="Agent Workspace">cb1af195872023002941b53046cb0b4e</route><sys_class_name>sys_notification_workspace_content</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-14 01:23:58</sys_created_on><sys_id>18522b4ac30312108d241275e40131c9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Notify New Ticket</sys_name><sys_package display_value="Nam Mangement" source="a0981ab9c30312108d241275e40131d5">a0981ab9c30312108d241275e40131d5</sys_package><sys_policy/><sys_scope display_value="Nam Mangement">a0981ab9c30312108d241275e40131d5</sys_scope><sys_update_name>sys_notification_workspace_content_18522b4ac30312108d241275e40131c9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-14 01:23:58</sys_updated_on></sys_notification_workspace_content></record_update>]]></payload>
+        <payload_hash>990871305</payload_hash>
+        <record_name>Notify New Ticket</record_name>
+        <reverted_from/>
+        <source>be2ef2b5c34712108d241275e4013182</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-14 01:23:58</sys_created_on>
+        <sys_id>9252674ac30312108d241275e4013118</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194626908fd0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-14 01:23:58</sys_updated_on>
+        <type>Notification Workspace Content</type>
+        <update_guid>9652674a41031210fb857ca4bf1dc717</update_guid>
+        <update_guid_history>9652674a41031210fb857ca4bf1dc717:990871305</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-14 01:38:14</sys_created_on>
+        <sys_db_object display_value="" name="sys_notification_workspace_content">sys_notification_workspace_content</sys_db_object>
+        <sys_id>5232b4b6ef484e3da376ae3f739caaa1</sys_id>
+        <sys_metadata>18522b4ac30312108d241275e40131c9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Notify New Ticket</sys_name>
+        <sys_package display_value="Nam Mangement" source="a0981ab9c30312108d241275e40131d5">a0981ab9c30312108d241275e40131d5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Nam Mangement">a0981ab9c30312108d241275e40131d5</sys_scope>
+        <sys_scope_delete display_value="">100dbc64c45c416e895235a3c5ac0044</sys_scope_delete>
+        <sys_update_name>sys_notification_workspace_content_18522b4ac30312108d241275e40131c9</sys_update_name>
+        <sys_update_version display_value="sys_notification_workspace_content_18522b4ac30312108d241275e40131c9">9252674ac30312108d241275e4013118</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-14 01:38:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
