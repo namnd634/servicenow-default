@@ -15,7 +15,7 @@
         <event_parm_1_table>sys_user</event_parm_1_table>
         <event_parm_2>false</event_parm_2>
         <event_parm_2_table>sys_user</event_parm_2_table>
-        <include_originator>true</include_originator>
+        <include_originator>false</include_originator>
         <name>Notify New Ticket</name>
         <order>100</order>
         <recipient_fields/>
@@ -40,7 +40,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>cfdfd786c30312108d241275e4013101</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Notify New Ticket</sys_name>
         <sys_overrides/>
         <sys_package display_value="Nam Mangement" source="a0981ab9c30312108d241275e40131d5">a0981ab9c30312108d241275e40131d5</sys_package>
@@ -48,7 +48,7 @@
         <sys_scope display_value="Nam Mangement">a0981ab9c30312108d241275e40131d5</sys_scope>
         <sys_update_name>sys_notification_cfdfd786c30312108d241275e4013101</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-14 01:40:56</sys_updated_on>
+        <sys_updated_on>2025-01-17 01:46:27</sys_updated_on>
         <table>u_incident</table>
         <triggered_by>record_change</triggered_by>
     </sys_notification>
